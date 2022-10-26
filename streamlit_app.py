@@ -31,6 +31,7 @@ def get_fruity_vice_data(this_fruit_choice):
   fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
   return fruityvice_normalized
 
+streamlit.stop()
 
 streamlit.header("Fruityvice Fruit Advice!")
 try:
@@ -73,4 +74,4 @@ if streamlit.button('Add a Fruit to the List'):
   #allow an end user to add afruit to the list
 
 
-streamlit.stop()
+
