@@ -23,7 +23,7 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
-(fruits_to_show)
+streamlit.dataframe(fruits_to_show)
 
 #create the repeatable code block (called a function)
 def get_fruity_vice_data(this_fruit_choice):
